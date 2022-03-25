@@ -19,7 +19,7 @@ struct NoItemsView: View {
                 Text("There are no Items")
                     .font(.title)
                     .fontWeight(.semibold)
-                Text("Have a productive day, well organised! Add a couple of items to your To do list!")
+                Text("Need a productive and well organised day? Add a couple of items to your To do list!")
                     .padding(.bottom, 10)
                 NavigationLink {
                     AddView()
