@@ -48,9 +48,17 @@ struct NoItemsView: View {
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .toolbar {
                 ToolbarItem(placement: .bottomBar) {
-                    Text("Created By: AlexSsew")
-                        .font(.caption)
-                        .bold()
+                    VStack {
+                        Text("Created By: AlexSsew")
+                            .font(.caption)
+                            .bold()
+                        Capsule()
+                            .offset(x: 0, y: -6)
+                            .frame(height: 3)
+                            .foregroundColor(.accentColor)
+                    }
+
+                        
                 }
             }
     }
