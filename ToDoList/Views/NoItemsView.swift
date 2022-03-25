@@ -46,6 +46,13 @@ struct NoItemsView: View {
                 .onAppear(perform: addAnimation)
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .toolbar {
+                ToolbarItem(placement: .bottomBar) {
+                    Text("Created By: AlexSsew")
+                        .font(.caption)
+                        .bold()
+                }
+            }
     }
     func addAnimation(){
         guard !animate else{return}
